@@ -3,32 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 90;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65136E7E2C7A65D4004B8481 /* WordCraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136E7D2C7A65D4004B8481 /* WordCraftApp.swift */; };
+		65136E7E2C7A65D4004B8481 /* OrdbyggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136E7D2C7A65D4004B8481 /* OrdbyggerApp.swift */; };
 		65136E802C7A65D4004B8481 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136E7F2C7A65D4004B8481 /* ContentView.swift */; };
 		65136E822C7A65D5004B8481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65136E812C7A65D5004B8481 /* Assets.xcassets */; };
 		65136E852C7A65D5004B8481 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65136E842C7A65D5004B8481 /* Preview Assets.xcassets */; };
+		65136E912C7A6705004B8481 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136E902C7A6705004B8481 /* Tile.swift */; };
+		65136E932C7A680B004B8481 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136E922C7A680B004B8481 /* ViewModel.swift */; };
+		65136E952C7A7392004B8481 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65136E942C7A7392004B8481 /* Rule.swift */; };
+		654C2E212DE334FE006F60DC /* ordbog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 654C2E202DE334FE006F60DC /* ordbog.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65136E7A2C7A65D4004B8481 /* WordCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		65136E7D2C7A65D4004B8481 /* WordCraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCraftApp.swift; sourceTree = "<group>"; };
+		65136E7A2C7A65D4004B8481 /* Ordbygger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ordbygger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65136E7D2C7A65D4004B8481 /* OrdbyggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdbyggerApp.swift; sourceTree = "<group>"; };
 		65136E7F2C7A65D4004B8481 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65136E812C7A65D5004B8481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65136E842C7A65D5004B8481 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		65136E862C7A65D5004B8481 /* WordCraft.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordCraft.entitlements; sourceTree = "<group>"; };
+		65136E862C7A65D5004B8481 /* Ordbygger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ordbygger.entitlements; sourceTree = "<group>"; };
+		65136E902C7A6705004B8481 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		65136E922C7A680B004B8481 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		65136E942C7A7392004B8481 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		654C2E202DE334FE006F60DC /* ordbog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ordbog.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		65136E772C7A65D3004B8481 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -36,7 +42,7 @@
 		65136E712C7A65D3004B8481 = {
 			isa = PBXGroup;
 			children = (
-				65136E7C2C7A65D4004B8481 /* WordCraft */,
+				65136E7C2C7A65D4004B8481 /* Ordbygger */,
 				65136E7B2C7A65D4004B8481 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +50,25 @@
 		65136E7B2C7A65D4004B8481 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65136E7A2C7A65D4004B8481 /* WordCraft.app */,
+				65136E7A2C7A65D4004B8481 /* Ordbygger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65136E7C2C7A65D4004B8481 /* WordCraft */ = {
+		65136E7C2C7A65D4004B8481 /* Ordbygger */ = {
 			isa = PBXGroup;
 			children = (
-				65136E7D2C7A65D4004B8481 /* WordCraftApp.swift */,
+				65136E7D2C7A65D4004B8481 /* OrdbyggerApp.swift */,
 				65136E7F2C7A65D4004B8481 /* ContentView.swift */,
+				65136E942C7A7392004B8481 /* Rule.swift */,
+				65136E902C7A6705004B8481 /* Tile.swift */,
+				65136E922C7A680B004B8481 /* ViewModel.swift */,
+				654C2E202DE334FE006F60DC /* ordbog.txt */,
 				65136E812C7A65D5004B8481 /* Assets.xcassets */,
-				65136E862C7A65D5004B8481 /* WordCraft.entitlements */,
+				65136E862C7A65D5004B8481 /* Ordbygger.entitlements */,
 				65136E832C7A65D5004B8481 /* Preview Content */,
 			);
-			path = WordCraft;
+			path = Ordbygger;
 			sourceTree = "<group>";
 		};
 		65136E832C7A65D5004B8481 /* Preview Content */ = {
@@ -72,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65136E792C7A65D3004B8481 /* WordCraft */ = {
+		65136E792C7A65D3004B8481 /* Ordbygger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65136E892C7A65D5004B8481 /* Build configuration list for PBXNativeTarget "WordCraft" */;
+			buildConfigurationList = 65136E892C7A65D5004B8481 /* Build configuration list for PBXNativeTarget "Ordbygger" */;
 			buildPhases = (
 				65136E762C7A65D3004B8481 /* Sources */,
 				65136E772C7A65D3004B8481 /* Frameworks */,
@@ -82,11 +92,9 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
-			name = WordCraft;
+			name = Ordbygger;
 			productName = WordCraft;
-			productReference = 65136E7A2C7A65D4004B8481 /* WordCraft.app */;
+			productReference = 65136E7A2C7A65D4004B8481 /* Ordbygger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,27 +105,27 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					65136E792C7A65D3004B8481 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 65136E752C7A65D3004B8481 /* Build configuration list for PBXProject "WordCraft" */;
-			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			buildConfigurationList = 65136E752C7A65D3004B8481 /* Build configuration list for PBXProject "Ordbygger" */;
+			developmentRegion = da;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				da,
 			);
 			mainGroup = 65136E712C7A65D3004B8481;
+			preferredProjectObjectVersion = 90;
 			productRefGroup = 65136E7B2C7A65D4004B8481 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65136E792C7A65D3004B8481 /* WordCraft */,
+				65136E792C7A65D3004B8481 /* Ordbygger */,
 			);
 		};
 /* End PBXProject section */
@@ -125,29 +133,29 @@
 /* Begin PBXResourcesBuildPhase section */
 		65136E782C7A65D3004B8481 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 				65136E852C7A65D5004B8481 /* Preview Assets.xcassets in Resources */,
+				654C2E212DE334FE006F60DC /* ordbog.txt in Resources */,
 				65136E822C7A65D5004B8481 /* Assets.xcassets in Resources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65136E762C7A65D3004B8481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				65136E912C7A6705004B8481 /* Tile.swift in Sources */,
+				65136E952C7A7392004B8481 /* Rule.swift in Sources */,
 				65136E802C7A65D4004B8481 /* ContentView.swift in Sources */,
-				65136E7E2C7A65D4004B8481 /* WordCraftApp.swift in Sources */,
+				65136E932C7A680B004B8481 /* ViewModel.swift in Sources */,
+				65136E7E2C7A65D4004B8481 /* OrdbyggerApp.swift in Sources */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		65136E872C7A65D5004B8481 /* Debug */ = {
+		65136E872C7A65D5004B8481 /* Debug configuration for PBXProject "Ordbygger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -181,7 +189,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 24BYRJUEGD;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -210,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		65136E882C7A65D5004B8481 /* Release */ = {
+		65136E882C7A65D5004B8481 /* Release configuration for PBXProject "Ordbygger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +254,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 24BYRJUEGD;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -265,79 +277,87 @@
 			};
 			name = Release;
 		};
-		65136E8A2C7A65D5004B8481 /* Debug */ = {
+		65136E8A2C7A65D5004B8481 /* Debug configuration for PBXNativeTarget "Ordbygger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WordCraft/WordCraft.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Ordbygger/Ordbygger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WordCraft/Preview Content\"";
-				DEVELOPMENT_TEAM = 24BYRJUEGD;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Ordbygger/Preview Content\"";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ordbygger;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.aplacebetweenhere.WordCraft;
+				PRODUCT_BUNDLE_IDENTIFIER = net.aplacebetweenhere.Ordbygger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		65136E8B2C7A65D5004B8481 /* Release */ = {
+		65136E8B2C7A65D5004B8481 /* Release configuration for PBXNativeTarget "Ordbygger" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WordCraft/WordCraft.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Ordbygger/Ordbygger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WordCraft/Preview Content\"";
-				DEVELOPMENT_TEAM = 24BYRJUEGD;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Ordbygger/Preview Content\"";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ordbygger;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.word-games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.aplacebetweenhere.WordCraft;
+				PRODUCT_BUNDLE_IDENTIFIER = net.aplacebetweenhere.Ordbygger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65136E752C7A65D3004B8481 /* Build configuration list for PBXProject "WordCraft" */ = {
+		65136E752C7A65D3004B8481 /* Build configuration list for PBXProject "Ordbygger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65136E872C7A65D5004B8481 /* Debug */,
-				65136E882C7A65D5004B8481 /* Release */,
+				65136E872C7A65D5004B8481 /* Debug configuration for PBXProject "Ordbygger" */,
+				65136E882C7A65D5004B8481 /* Release configuration for PBXProject "Ordbygger" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65136E892C7A65D5004B8481 /* Build configuration list for PBXNativeTarget "WordCraft" */ = {
+		65136E892C7A65D5004B8481 /* Build configuration list for PBXNativeTarget "Ordbygger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				65136E8A2C7A65D5004B8481 /* Debug */,
-				65136E8B2C7A65D5004B8481 /* Release */,
+				65136E8A2C7A65D5004B8481 /* Debug configuration for PBXNativeTarget "Ordbygger" */,
+				65136E8B2C7A65D5004B8481 /* Release configuration for PBXNativeTarget "Ordbygger" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */

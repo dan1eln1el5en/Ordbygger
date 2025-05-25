@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct WordCraftApp: App {
+struct OrdbyggerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+		.windowResizability(.contentSize)
     }
 }

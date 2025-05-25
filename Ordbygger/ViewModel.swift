@@ -1,6 +1,6 @@
 //
 //  ViewModel.swift
-//  WordCraft
+//  Ordbygger
 //
 //  Created by Daniel Nielsen on 24/08/2024.
 //

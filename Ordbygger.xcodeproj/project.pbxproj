@@ -93,7 +93,7 @@
 			buildRules = (
 			);
 			name = Ordbygger;
-			productName = WordCraft;
+			productName = Ordbygger;
 			productReference = 65136E7A2C7A65D4004B8481 /* Ordbygger.app */;
 			productType = "com.apple.product-type.application";
 		};

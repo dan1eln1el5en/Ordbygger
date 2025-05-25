@@ -1,6 +1,6 @@
 //
-//  WordCraftApp.swift
-//  WordCraft
+//  OrdbyggerApp.swift
+//  Ordbygger
 //
 //  Created by Daniel Nielsen on 24/08/2024.
 //

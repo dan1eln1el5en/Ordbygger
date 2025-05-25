@@ -27,6 +27,18 @@ class ViewModel {
 	}()
 	
 	init(){
+		#if os(iOS)
+		for i in 0..<4 {
+			var column = [Tile]()
+			
+			for _ in 0..<10 {
+				let piece = Tile(column: i)
+				column.append(piece)
+			}
+			
+			columns.append(column)
+		}
+		#else
 		for i in 0..<5 {
 			var column = [Tile]()
 			
@@ -37,6 +49,8 @@ class ViewModel {
 			
 			columns.append(column)
 		}
+		#endif
+		
 		selectRule()
 	}
 	
@@ -176,7 +190,7 @@ class ViewModel {
 			Rule(name: "Har netop \(targetLength)", predicate: isLengthN),
 			Rule(name: "Har mindst \(targetLength)", predicate: isAtLeastLengthN),
 			Rule(name: "Begynder og slutter på samme bogstav", predicate: beginsAndEndsSame),
-			Rule(name: "Uses each letter only once", predicate: hasUniquieLetters),
+			Rule(name: "Brug hvert bogstav kun én gang", predicate: hasUniquieLetters),
 			Rule(name: "Har samme antal vokaler og konsonanter", predicate: hasEqualVowelsAndConsonants)
 		]
 		
